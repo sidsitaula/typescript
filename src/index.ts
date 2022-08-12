@@ -1,7 +1,7 @@
 // @errors: 2578
-type JSONObject = any
-type JSONArray = any
-type JSONValue = any
+type JSONObject = {[k:string]:JSONValue}
+type JSONArray = JSONValue[]
+type JSONValue = string | number | Boolean | JSONArray | JSONObject
 
 ////// DO NOT EDIT ANY CODE BELOW THIS LINE //////
 function isJSON(arg: JSONValue) {}
